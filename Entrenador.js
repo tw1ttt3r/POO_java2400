@@ -13,4 +13,8 @@ class Entrenador extends Persona {
 
   verInformacion() {}
 
+  listarInformacion() {
+    console.log(`Mi nombre es ${this.nombre}, soy del pueblo ${this.ciudad} y mi primer pokemon es: ${this.equipo[0].nombre}`)
+  } 
+
 }
