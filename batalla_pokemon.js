@@ -12,7 +12,8 @@ const batallas = prompt("Número de batallas: ");
 const fecha_comienzo = prompt("Fecha de comienzo: ");
 
 // instancia
-const entrenador = new Lider(nombre, medallas, ciudad, nivel, batallas, fecha_comienzo);
+// const entrenador = new Lider(nombre, medallas, ciudad, nivel, batallas, fecha_comienzo);
+const entrenador = new Entrenador(nombre, medallas, ciudad, nivel, batallas, fecha_comienzo);
 
 alert(`Genial ${entrenador.nombre} vamos a registrar a tu equipo`);
 
@@ -33,6 +34,8 @@ if (Number(numeroPokemon) <= 6) {
   entrenador.guardarEquipo(pokemones);
 
   entrenador.verEquipo()
+
+  entrenador.listarInformacion();
 
   alert("muchas gracias por su registro")
 }
